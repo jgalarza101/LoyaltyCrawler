@@ -1,0 +1,256 @@
+.clearfix {
+  overflow: auto;
+}
+
+body {
+  background-color: #6c757d;
+  font-family: Arial, Helvetica, san-serif;
+}
+
+/* Views */
+.ui-box{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 20px rgba(0,0,0,0.19);
+  border-radius: 15px;
+  z-index: 0;
+  margin: 2em;
+  padding: 2em;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.ui-box-keywords{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 20px rgba(0,0,0,0.19);
+  border-radius: 15px;
+  z-index: 0;
+  /*height: calc(100vh - 40px);*/
+  height: 40px;
+  margin: 2em;
+  padding: 2em;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* For logo in left side bar */
+.logo {
+  display: block;
+  line-height: 80px;
+}
+/* Aligns text to the center */
+.text-center {
+  text-align: center!important;
+}
+/* ============================================================================ */
+/* Middle of the page */
+.main-content {
+  margin-left: 225px;
+  overflow: hidden;
+  padding:5px 5px;
+}
+
+.content-page {
+  overflow: hidden;
+  padding:0px 0px;
+  min-height: 80vh;
+}
+
+.content-page-keywords {
+  overflow: hidden;
+  padding:5px 5px;
+  min-height: 40vh;
+}
+
+.subcontent-header {
+  padding: 10px;
+}
+
+.navbar-custom {
+  padding: 0 30px;
+  background-color: #e6e6e6;
+  webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+  box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+}
+
+.table-bounds {
+  overflow-x: scroll;
+}
+
+.query-search-bar {
+  margin: 10px 0px 10px 0px;
+}
+
+/* ============================================================================ */
+/* Session View Structure */
+/* The right sidebar */
+.right-sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 220px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-image: linear-gradient(135deg,#8f75da 0,#727cf5 60%);
+  color: #fff;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The sidebar navigation menu title*/
+.right-sidenav h2 {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.right-sidenav h5 {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #cedce4;
+}
+
+.right-sidenav h6 {
+  padding: 0px 8px 0px 16px;
+  text-decoration: none;
+  color: #cedce4;
+}
+
+.session-button {
+  margin: 6px 8px 6px 16px;
+  background-color: #26a69a;
+  color: #fff;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.session-button:hover {
+  background-color: #32cdbf;
+  color: white;
+}
+
+.right-sidenav li {
+  text-decoration: none;
+  color: #cedce4;
+}
+
+/* The navigation menu links */
+.right-sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #cedce4;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.right-sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .right-sidenav {padding-top: 15px;}
+  .right-sidenav a {font-size: 18px;}
+}
+
+.right-sidenav ul li {
+  text-decoration: none;
+  color: #cedce4;
+}
+
+/* The navigation menu links */
+.right-sidenav ul a {
+  padding: 0px 1px 0px 2px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #cedce4;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.right-sidenav ul a:hover,span:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+/* Select Pop Up  */
+.select-dropdown-element {
+  margin: 6px 8px 6px 16px;
+}
+
+.select-dropdown-element select {
+  border-radius: 4px;
+  padding: 2px 4px 2px 8px;
+}
+
+.select-dropdown {
+  color: #fff;
+}
+
+.caret > path:nth-child(1) {
+  fill: #fff;
+}
+
+.info-box {
+  border-radius: 4px;
+  padding: 5px;
+  margin: 15px 15px 15px 15px;
+  position: relative;
+  background-color: #7e87f6;
+}
+
+.info-box h6 {
+  font-size: 0.9em;
+}
+
+
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content-not-bootstrap {
+  background-color: #fefefe;
+  margin: 8% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 20px rgba(0,0,0,0.19);
+border-radius: 15px;
+max-height:  84vh;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+#nav-bar-start div{
+  color: red;
+}
+
+.remove-button{
+  text-decoration: underline !important;
+  cursor: pointer;
+  color:#007bff !important;  
+}

@@ -1,2 +1,1 @@
 # LoyaltyCrawler
-Senior Group Project
